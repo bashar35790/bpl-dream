@@ -17,17 +17,17 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1500,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSc-PuNJ6T6Yse8jtFKxjaStFR4f9bAlLxRbrNM7m4pv0DQ8t8RO4ZhSUpxBHK5seV5LTlgGoY-S_dr3Zg"
   },
   {
-    "playerName": "Ben Stokes",
+    "playerName": "Ben Stokes", 
     "playerCountry": "England",
     "playerType": "All-Rounder",
     "rating": 9.3,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 2500,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT00paVgX25gT0j0b5Gx717Rn22seSokrxgPl9_byF0ftJT09oXJxJ-YuBZ-LU2ZOBaRqRn6QNZFvgJp9c6BXBcB5eeu1WUn6dQuoyIMUrCciJKKYN8HONREIqVY6vgjzqv3Xc_lTPMtr2W&s=19"
   },
   {
     "playerName": "Kane Williamson",
@@ -37,7 +37,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1100000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eUHZH9LlSjqEb1mETE2d_bJxIZYvybEtRyNE085CoIcJO2s1sQs_nzVxh_LeB-od5I9xnww9zSlePxjdlrzOTqIlT86483elXZRMZSK_oQ&s=10"
   },
   {
     "playerName": "Rashid Khan",
@@ -47,7 +47,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 1300000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNPzYmvhzcRDgKDxpFVD8JML1RTwCRZmwczT22aALAgllkAo4R-nHPRHmM9hRh43lEr6-qKsyq0cIOQdaoYDPLeUXsDhiM6BJxA5CgQLne&s=10"
   },
   {
     "playerName": "Jos Buttler",
@@ -57,6 +57,6 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "N/A",
     "price": 1250000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTVuCXcDoXtzAQIRLZLa7dDQfQfFvbX-ankV8OAusXdXturKuuFBJMuelL9sY7I79v7msO3RSpVG-JvNP8qcTLL5CUwVI0rLoNTj7tCrS64INogeLfJ3HejjfkeNAkdGL-t1SrfPm-GMS9g&s=19"
   }
 ]

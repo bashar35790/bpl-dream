@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 .fonts {
     font-family: "Sora", sans-serif;
@@ -10,10 +10,8 @@
 }
 
 @theme {
-    --color-brand: #131313;
-    --color-brand-70: #131313/70;
-    --color-white: #ffffff;
-    --color-white-70: #ffffff/70;
-    --color-black: #000000;
-    --color-brand2:#E7FE29;
+    --color-Brand: #131313;
+    --color-White: #ffffff;
+    --color-Black: #000000;
+    --color-Brand2:#E7FE29;
 }

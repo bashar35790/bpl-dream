@@ -17,7 +17,7 @@ export default function Banner() {
                         <p className="mb-5">
                             Beyond Boundaries Beyond Limits
                         </p>
-                        <button className="btn bg-brand2">Claim Free Credit</button>
+                        <button className="btn bg-Brand2 outline-1 outline-offset-4 outline-Brand2">Claim Free Credit</button>
                     </div>
                 </div>
             </div>
