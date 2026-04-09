@@ -1,18 +1,28 @@
 import { Flag, User } from "lucide-react";
 import { useState } from "react";
 
-export default function PlayerCard({ AllPlayers }) {
-  console.log(AllPlayers);
-  const [chooseButton, setChooseButton]= useState(false)
+export default function PlayerCard({ AllPlayers, coin , setCoin, buttonToggle }) {
+const [selectedPlayers, setSelectedPlayers] = useState([]);
 
+const handlePlayerSelection = (player)=>{
+   if(!selectedPlayers.includes(player.playerName)){
+        setSelectedPlayers([...selectedPlayers, player.playerName]);
+   }
+   if(player.price < coin){
+     setCoin(coin-player.price);
+   }else{
+     alert("Your balance is too low. you can't buy this player");
+   }
+};
 
+console.log(selectedPlayers);
 
   return (
     <>
     <div className="grid grid-cols-3 gap-5">
       {AllPlayers.map((player, index) => {
         return (
-          <div className="card bg-base-100 shadow-sm p-6" key={index}>
+          <div className="card bg-base-100 shadow-sm p-2" key={index}>
             <figure>
               <img
                 className=" rounded-2xl h-70 w-full"
@@ -21,7 +31,7 @@ export default function PlayerCard({ AllPlayers }) {
                 
               />
             </figure>
-            <div className="card-body space-y-2.5">
+            <div className="card-body space-y-2.5 p-2">
               <h2 className="card-title">
                 <User />
                 {player.playerName}
@@ -50,8 +60,12 @@ export default function PlayerCard({ AllPlayers }) {
                   </p>
                 </div>
                 <div className="flex justify-between items-center">
-                  <p className=" font-bold">Price: $1500000</p>
-                  <button className="btn text-Brand/70" onClick={()=>setChooseButton(true)}>{chooseButton?"":""}</button>
+                  <p className=" font-bold">Price: {player.price}</p>
+                  <button
+                    disabled={selectedPlayers.includes(player.playerName)}
+                   className={`btn text-Brand/70 text-[14px] p-2 ${selectedPlayers.includes(player.playerName) && coin> player.price?"  disabled:bg-green-300 disabled:cursor-not-allowed":""}`} onClick={()=>handlePlayerSelection(player)}>{
+                    selectedPlayers.includes(player.playerName) && coin> player.price?"Added to the cart":"Choose Player"
+                  }</button>
                 </div>
               </div>
             </div>

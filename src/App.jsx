@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import Banner from "./component/hero/Banner"
 import Navbar from "./component/navbar/Navbar"
-import PlayerContainer from "./component/playerContainer/playerContainer";
-
+import PlayerContainer from "./component/playerContainer/PlayerContainer"
 
 
 
 function App() {
-  const [AllPlayers, setAllPlayers]= useState([])
+  const [AllPlayers, setAllPlayers]= useState([]);
+  const [coin, setCoin]= useState(50000);
+  
+  
 
   useEffect(()=>{
   const playerData = async()=>{
@@ -22,9 +24,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar coin={coin}/>
       <Banner />
-      <PlayerContainer AllPlayers={AllPlayers} ></PlayerContainer>
+      <PlayerContainer AllPlayers={AllPlayers} coin={coin} setCoin={setCoin}></PlayerContainer>
     </>
   )
 }

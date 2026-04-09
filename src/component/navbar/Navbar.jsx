@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../../assets/logo.png'
 import Coin from '../../assets/dollar 1.png'
 
-export default function Navbar() {
+export default function Navbar({coin}) {
     return (
         <nav className='w-full'>
             <div className="navbar container mx-auto">
@@ -17,7 +17,7 @@ export default function Navbar() {
                         <li><a>Fixture</a></li>
                         <li><a>Teams</a></li>
                         <li><a>Schedules</a></li>
-                        <div className='flex gap-1 items-center btn'><p className=''>0 Coin</p> <img src={Coin} alt="Coin" className='w-6 h-6' /></div>
+                        <div className='flex gap-1 items-center btn'><p className=''>{coin} Coin</p> <img src={Coin} alt="Coin" className='w-6 h-6' /></div>
 
                     </ul>
                 </div>

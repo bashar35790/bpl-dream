@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PlayerCard from "../../utils/PlayerCard";
 
-export default function PlayerContainer({ AllPlayers }) {
+export default function PlayerContainer({ AllPlayers, coin, setCoin }) {
     const [buttonToggle, setButtonTogle]=useState("Available")
   return (
     <section className="py-20">
@@ -16,7 +16,7 @@ export default function PlayerContainer({ AllPlayers }) {
           </div>
         </div>
 
-        <PlayerCard AllPlayers={AllPlayers}></PlayerCard>
+        <PlayerCard AllPlayers={AllPlayers} coin={coin} setCoin={setCoin} buttonToggle={buttonToggle}></PlayerCard>
       </div>
     </section>
   );
