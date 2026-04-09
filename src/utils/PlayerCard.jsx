@@ -1,8 +1,10 @@
 import { Flag, User } from "lucide-react";
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
-export default function PlayerCard({ AllPlayers, coin , setCoin, buttonToggle }) {
+export default function PlayerCard({ AllPlayers, coin , setCoin }) {
 const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const notify = () => toast('Added to the cart');
 
 const handlePlayerSelection = (player)=>{
    if(!selectedPlayers.includes(player.playerName)){
@@ -63,9 +65,17 @@ console.log(selectedPlayers);
                   <p className=" font-bold">Price: {player.price}</p>
                   <button
                     disabled={selectedPlayers.includes(player.playerName)}
-                   className={`btn text-Brand/70 text-[14px] p-2 ${selectedPlayers.includes(player.playerName) && coin> player.price?"  disabled:bg-green-300 disabled:cursor-not-allowed":""}`} onClick={()=>handlePlayerSelection(player)}>{
+                   className={`btn text-Brand/70 text-[14px] p-2 ${selectedPlayers.includes(player.playerName) && coin> player.price?"  disabled:bg-green-300 disabled:cursor-not-allowed":""}`} onClick={()=>
+                   {
+                     handlePlayerSelection(player);
+                     notify();
+                   }
+
+
+                   }>{
                     selectedPlayers.includes(player.playerName) && coin> player.price?"Added to the cart":"Choose Player"
                   }</button>
+                  <ToastContainer></ToastContainer>
                 </div>
               </div>
             </div>
